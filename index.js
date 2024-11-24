@@ -15,7 +15,6 @@ getConnection();
 app.use(express.json());
 app.use('/cliente', require('./routers/cliente'));
 app.use('/etapa', require('./routers/etapa'));
-app.use('/proyecto', require('./routers/proyecto'));
 app.use('/tipoProyecto', require('./routers/tipoProyecto'));
 app.use('/universidad', require('./routers/universidad'));
 
