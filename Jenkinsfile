@@ -21,6 +21,7 @@ pipeline {
                 }
             }
         }
+<<<<<<< HEAD:jenkinsfile
 
         stage('Desplegar Contenedor Docker') {
             steps {
@@ -54,3 +55,7 @@ pipeline {
     }
 }
 
+=======
+  }
+}
+>>>>>>> 51d70321fefcb20cf17a73f7978dd1cdfb2df31e:Jenkinsfile
