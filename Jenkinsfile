@@ -29,7 +29,7 @@ pipeline {
                     bat """
                         docker run -d ^
                         --name backend-monolitico ^
-                        -e MONGO_URI=%MONGO_URI% ^
+                        -e "MONGO_URI=%MONGO_URI%" ^
                         -p 4000:4000 ^
                         juand110/backend-monolitico
                     """
