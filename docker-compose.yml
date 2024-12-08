@@ -1,14 +1,16 @@
-version : "3.7"
-services :
-  monolito :
-    container_name : monolito
-    image : monolito:v1
-    build : 
-      context : .
-    ports : 
+version: "3.7"
+services:
+  monolito:
+    container_name: monolito
+    image: monolito:v1
+    build:
+      context: .
+    ports:
       - "3001:3001"
-    networks : 
-     - proyectos-app
+    networks:
+      - proyectos-app
+    environment:
+      - MONGO_URI=${MONGO_URI}  # Aquí agregas la variable de entorno
 
-networks : 
-  proyectos-app :
+networks:
+  proyectos-app:
